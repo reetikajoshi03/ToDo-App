@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div id="tasks-container">
+            <!-- Tasks will be displayed here -->
+        </div>
+        <div id="actions">
+            <button onclick="showAddTaskForm()">Add Task</button>
+            <!--<button onclick="showUpdateTaskForm(index)">Update Task</button>
+            <button onclick="deleteTask(index)">Delete Task</button>-->
+            <button onclick="viewTasks()">View Tasks</button>
+            <button onclick="exitApp()">Exit</button>
+        </div>
+    </div>
+
+    <div id="modal-container" class="modal-container">
+        <!-- Modal for adding and updating tasks will be displayed here -->
+    </div>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
