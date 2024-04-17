@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.todolist.AppIntegrationTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.103 s <<< FAILURE! -- in com.example.todolist.AppIntegrationTest
-com.example.todolist.AppIntegrationTest.testAppIntegration -- Time elapsed: 0.026 s <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.118 s <<< FAILURE! -- in com.example.todolist.AppIntegrationTest
+com.example.todolist.AppIntegrationTest.testAppIntegration -- Time elapsed: 0.029 s <<< FAILURE!
 org.junit.ComparisonFailure: 
 expected:<...st Application =====[
 1. Add Task
@@ -12,10 +12,13 @@ expected:<...st Application =====[
 5. View Tasks
 6. Exit
 Enter your choice: Enter task title: Enter task description: Task added successfully.
+Task marked as completed.
+Task updated successfully.
+Task deleted successfully.
 Tasks:
-Task 1: Sample Task
-Description: Description
-Completed: No
+Task 1: New Title
+Description: New Description
+Completed: Yes
 
 ===== To-Do List Application =====
 1. Add Task
@@ -80,7 +83,7 @@ Enter your choice: Exiting...]
 >
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.example.todolist.AppIntegrationTest.testAppIntegration(AppIntegrationTest.java:63)
+	at com.example.todolist.AppIntegrationTest.testAppIntegration(AppIntegrationTest.java:73)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)

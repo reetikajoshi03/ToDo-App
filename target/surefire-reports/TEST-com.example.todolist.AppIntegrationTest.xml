@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.todolist.AppIntegrationTest" time="0.103" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.todolist.AppIntegrationTest" time="0.118" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\reeti\AppData\Local\Temp\surefire9061512390011947644\surefirebooter-20240417115309995_3.jar C:\Users\reeti\AppData\Local\Temp\surefire9061512390011947644 2024-04-17T11-53-09_643-jvmRun1 surefire-20240417115309995_1tmp surefire_0-20240417115309995_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\reeti\AppData\Local\Temp\surefire8855543445598902789\surefirebooter-20240417122403369_3.jar C:\Users\reeti\AppData\Local\Temp\surefire8855543445598902789 2024-04-17T12-24-03_010-jvmRun1 surefire-20240417122403369_1tmp surefire_0-20240417122403369_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\reeti\OneDrive\Desktop\todolist\target\test-classes;C:\Users\reeti\OneDrive\Desktop\todolist\target\classes;C:\Users\reeti\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\reeti\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\reeti\AppData\Local\Temp\surefire9061512390011947644\surefirebooter-20240417115309995_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\reeti\AppData\Local\Temp\surefire8855543445598902789\surefirebooter-20240417122403369_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
@@ -58,8 +58,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testAppIntegration" classname="com.example.todolist.AppIntegrationTest" time="0.026">
-    <failure message="expected:&lt;...st Application =====[&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter task title: Enter task description: Task added successfully.&#10;Tasks:&#10;Task 1: Sample Task&#10;Description: Description&#10;Completed: No&#10;&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Exiting...]&#10;&gt; but was:&lt;...st Application =====[&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter task title: Enter task description: Task added successfully.&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter the index of the task to mark as completed: Task marked as completed.&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter the index of the task to update: Enter updated task title: Enter updated task description: Task updated successfully.&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter the index of the task to delete: Task deleted successfully.&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Tasks:&#10;Task 1: Sample Task&#10;Description: Description&#10;Completed: No&#10;&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Exiting...&#13;]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+  <testcase name="testAppIntegration" classname="com.example.todolist.AppIntegrationTest" time="0.029">
+    <failure message="expected:&lt;...st Application =====[&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter task title: Enter task description: Task added successfully.&#10;Task marked as completed.&#10;Task updated successfully.&#10;Task deleted successfully.&#10;Tasks:&#10;Task 1: New Title&#10;Description: New Description&#10;Completed: Yes&#10;&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Exiting...]&#10;&gt; but was:&lt;...st Application =====[&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter task title: Enter task description: Task added successfully.&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter the index of the task to mark as completed: Task marked as completed.&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter the index of the task to update: Enter updated task title: Enter updated task description: Task updated successfully.&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Enter the index of the task to delete: Task deleted successfully.&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Tasks:&#10;Task 1: Sample Task&#10;Description: Description&#10;Completed: No&#10;&#10;===== To-Do List Application =====&#10;1. Add Task&#10;2. Mark Task as Completed&#10;3. Update Task&#10;4. Delete Task&#10;5. View Tasks&#10;6. Exit&#10;Enter your choice: Exiting...&#13;]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
 expected:<...st Application =====[
 1. Add Task
 2. Mark Task as Completed
@@ -68,10 +68,13 @@ expected:<...st Application =====[
 5. View Tasks
 6. Exit
 Enter your choice: Enter task title: Enter task description: Task added successfully.
+Task marked as completed.
+Task updated successfully.
+Task deleted successfully.
 Tasks:
-Task 1: Sample Task
-Description: Description
-Completed: No
+Task 1: New Title
+Description: New Description
+Completed: Yes
 
 ===== To-Do List Application =====
 1. Add Task
@@ -136,7 +139,7 @@ Enter your choice: Exiting...]
 >
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.example.todolist.AppIntegrationTest.testAppIntegration(AppIntegrationTest.java:63)
+	at com.example.todolist.AppIntegrationTest.testAppIntegration(AppIntegrationTest.java:73)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
