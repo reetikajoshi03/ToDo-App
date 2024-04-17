@@ -1,6 +1,7 @@
 package com.example.todolist;
 
 public class Task {
+    private int id;
     private String title;
     private String description;
     private boolean completed;
@@ -12,6 +13,14 @@ public class Task {
     }
 
     // Getters and setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -39,7 +48,8 @@ public class Task {
     @Override
     public String toString() {
         return "Task{" +
-                "title='" + title + '\'' +
+                "id=" + id +
+                ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", completed=" + completed +
                 '}';
